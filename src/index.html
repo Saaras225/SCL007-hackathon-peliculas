@@ -17,15 +17,17 @@
 
   <body>
   <!-- Logo y menu -->        
-    <header> 
+ <header class="light-blue lighten-1" role="navigation"> 
      
       <nav>
-        <div class="nav-wrapper">
+        <div class="nav-wrapper container">
           <a href="#" class="brand-logo">FemeFlix</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="">Instrucciones</a></li>
-            <li><a href="">Peliculas</a></li>
-            <li><a href="">?</a></li>
+            <li> <input type="text"  name="name" list="names"  id="search"  class="" placeholder="buscar">
+                 <datalist id="names" ></datalist>
+                </li>
+                <li><a href="">Instrucciones</a></li>
+
           </ul>
         </div>
       </nav>
@@ -36,28 +38,29 @@
 
 
  <!-- Aqui busca por Filtros y muestra todas las peliculas -->       
+<section class="section no-pad-bot" id="index-banner">
        <div class="container">
-                  
+        <br><br>
+        <h1 class="header center orange-text">Bienvidos a nuestra Web</h1>
+      
+       
                     <div class="row">
 
                       <!-- Aside buscador ordenar y tipos -->
 
                         <aside class="col s3">
                           <h5 >Peliculas</h5>
-                            <!-- Search form -->
-
-                     <div class="searching">
-                        <input type="text"  name="name" list="names"  id="search"  class="input is-success input-size" placeholder="¿?">
-                       
-                         <datalist id="names" ></datalist>
-                      </div>
- 
+                    
 
                           <!-- Movie filter for type section -->
-                         <div class="filterMovie"> <span class="margin-button"><a class="waves-effect waves-light btn-small">Quiero Llorar</a></span>
-
-                        <span><a class="waves-effect waves-light btn-small">Quiero Reir</a></span>
-                                  
+                         <div class="filterMovie">
+                         <ul>
+                           <li><a class="waves-effect waves-light btn-small">Quiero Llorar</a></li>
+                           <li><a class="waves-effect waves-light btn-small">Quiero Reir</a></li>
+                            <li><a class="waves-effect waves-light btn-small">Quiero Empoderarme</a></li>
+                           <li><a class="waves-effect waves-light btn-small">Quiero Gritar</a></li>
+                           <li><a class="waves-effect waves-light btn-small">Quiero Reir</a></li>
+                      </ul>       
                       </div>
                           
                         </aside>
@@ -71,6 +74,8 @@
                  </div>
             </div>
           </div>
+
+ </section>
  <!-- FIN busca por Filtros y muestra todas las peliculas -->   
 
  
@@ -97,7 +102,9 @@
 
 <!-- Compiled and minified JavaScript -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="main.js"></script>
+    <script src="movie.js"></script>
 
     </body>
 
