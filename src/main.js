@@ -1,3 +1,7 @@
+// Aqui debe ir el manejo del Dom
+
+
+// Probando Data desde OMDB, solo funcion Data con ¿console Log?
 const dataMovie =["tt1201607"]
 let data;
  fetch('https://www.omdbapi.com/?i='+ dataMovie + '&apikey=cc1c0d5d')
