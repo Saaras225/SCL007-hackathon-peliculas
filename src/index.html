@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Peliculas</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    
+
+  </head>
+
+  <body>
+  <!-- Logo y menu -->        
+    <header> 
+     
+      <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">FemeFlix</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="">Instrucciones</a></li>
+            <li><a href="">Peliculas</a></li>
+            <li><a href="">?</a></li>
+          </ul>
+        </div>
+      </nav>
+    
+   </header>
+<!-- Fin Logo y menu -->   
+
+
+
+ <!-- Aqui busca por Filtros y muestra todas las peliculas -->       
+       <div class="container">
+                  
+                    <div class="row">
+
+                      <!-- Aside buscador ordenar y tipos -->
+
+                        <aside class="col s3">
+                          <h5 >Peliculas</h5>
+                            <!-- Search form -->
+
+                     <div class="searching">
+                        <input type="text"  name="name" list="names"  id="search"  class="input is-success input-size" placeholder="¿?">
+                       
+                         <datalist id="names" ></datalist>
+                      </div>
+ 
+
+                          <!-- Movie filter for type section -->
+                         <div class="filterMovie"> <span class="margin-button"><a class="waves-effect waves-light btn-small">Quiero Llorar</a></span>
+
+                        <span><a class="waves-effect waves-light btn-small">Quiero Reir</a></span>
+                                  
+                      </div>
+                          
+                        </aside>
+
+                        <!-- Mostrar MOVIE filter for type section -->
+
+                    <div class="col s9">
+                   <div class="showFilterMovies" id="allMovies"> </div>
+                     </div>
+
+                 </div>
+            </div>
+          </div>
+ <!-- FIN busca por Filtros y muestra todas las peliculas -->   
+
+ 
+  <!-- Aqui Contenido de lo Mostrado al hacer click en peliculas -->    
+
+
+
+
+<!-- Footer -->
+
+
+    <footer class="page-footer">
+      
+          <div class="container">
+          © 2019 Laboratoria
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+          </div>
+    
+      </footer>
+
+
+<!-- Fin footer -->
+
+
+<!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="main.js"></script>
+
+    </body>
+
+</html>

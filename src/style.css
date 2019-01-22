@@ -1,0 +1,17 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.margin-button{
+    margin-bottom: 10px;
+}
+
+.filterMovie{
+    margin-top: 10px;
+}
+
+
