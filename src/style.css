@@ -20,3 +20,7 @@ ul li {
 
 }
 
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+    margin-right: 0px!important;
+ text-transform: none;
+}
