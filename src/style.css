@@ -34,8 +34,12 @@ ul li {
 .card.large .card-image {
     max-height: 80%!important;
 }
-#aallMovies{
-    display: flex;
+.showFilterMovies{
+  
     height: 500px;
     overflow-y: scroll;
+}
+
+nav {
+    background: none;
 }
