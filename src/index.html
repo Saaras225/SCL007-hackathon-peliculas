@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
 
   </head>
@@ -37,7 +38,7 @@
 
  <!-- Aqui busca por Filtros y muestra todas las peliculas -->
 <section class="section no-pad-bot" id="index-banner">
-<div class="container">
+
 <br><br>
 
 
@@ -49,19 +50,18 @@
 <aside class="col s3">
 <h5 >Peliculas</h5>
 
-
 <!-- Movie filter for type section -->
-<div class="filterMovie">
- <ul>
-    <li><a class="waves-effect waves-light btn-small">Quiero Llorar</a></li>
-    <li><a class="waves-effect waves-light btn-small">Quiero Reir</a></li>
-    <li><a class="waves-effect waves-light btn-small">Quiero Empoderarme</a></li>
-    <li><a class="waves-effect waves-light btn-small">Quiero Gritar</a></li>
-    <li><a class="waves-effect waves-light btn-small">Quiero Reir</a></li>
+ <div class="filterMovie">
+    <ul>
+    <li><a class="waves-effect waves-light btn-small">Mujeres líderes</a></li>
+    <li><a class="waves-effect waves-light btn-small">Dolor, Miedo y Amor</a></li>
+    <li><a class="waves-effect waves-light btn-small">Empoderamiento</a></li>
+    <li><a class="waves-effect waves-light btn-small">Volcán de emociones</a></li>
+    <li><a class="waves-effect waves-light btn-small">Superación personal</a></li>
     </ul>
-</div>
+    </div>
 
-  </aside>
+    </aside>
 
 <!-- Mostrar MOVIE filter for type section -->
 <div class="col s9">
@@ -69,17 +69,13 @@
 </div>
 
 </div>
+</section>
 
 
+  <div class="modal-footer">
+    <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+  </div>
 </div>
-
-
- <!-- FIN busca por Filtros y muestra todas las peliculas -->
-
-
-  <!-- Aqui Contenido de lo Mostrado al hacer click en peliculas -->
-
-
 
 
 <!-- Footer -->
@@ -98,13 +94,19 @@
 
 
 <!-- Compiled and minified JavaScript -->
+<script>
+
+
+    $(document).ready(function(){
+    $('.modal').modal();
+  });
+
+
+</script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
     <script src="main.js"></script>
     <script src="movie.js"></script>
-
-
-   </script>
 
 
     </body>
