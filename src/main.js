@@ -18,20 +18,20 @@ fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=cc1c0d5d')
                                     </div>
 
                                     <div class="card-action">
-                                    <a href="#">${Data.Title}</a>
+                                    <a class="" href="#section-movie">${Data.Title}</a>
                                 </div>
                                     
                                 </div>
                             </div>
-                            `
-  
-                        
                             
+                            `
+
+
+                      
+                   
 })
 
 })
-
-
 
 
 // selectHouse.addEventListener('change', () => {
