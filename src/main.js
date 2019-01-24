@@ -47,45 +47,54 @@ fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=cc1c0d5d')
 })
 
 
-// selectHouse.addEventListener('change', () => {
-//   let condition = selectHouse.options[selectHouse.selectedIndex].text;
-//   let filtered = filterHouse(DATA, condition);
-//   console.log(filtered)
-//   // limpio div
-//   containerRoot.innerHTML = '';
+//Strong Movies
 
-//   filtered.forEach(element => {
-//     containerRoot.innerHTML += `
-//     <div>
-//       <div class="card">
-//         <div class="box">
-//           <div class="img">
-//               <img src="${element.image}">
-//           </div>
-//           <h2>${element.name}<br><span>${element.house}</span></h2>
-//           <p>Patronus: ${element.patronus}</p>
-//         </div>
-//       </div>
-//     </div>` 
-//   })
-// })
-
-
-// const showData = (data) => {
-//   console.log(data)
-//  data.forEach(element => {
-//    // element --> DATA[i]
-//    console.log(element)
-//    document.getElementById('allMovies').innerHTML +=  `
-//      <div> <img src="${element.Poster}">
-//           <h2>${element.Title}</h2>
-           
-      
-//      </div>`
+document.getElementById("strong").addEventListener("click", () => {
+    femeMovie ()
+    document.getElementById('allMovies').innerHTML  = '';
    
-//  });
- 
-// }
-
-
-
+   })
+   
+   
+   const strongMovies =['tt0195685', 'tt0120762', 'tt1126590', 'tt2294629', 'tt1186830', 'tt0266697', 'tt1568346']
+   
+   function femeMovie () {
+    strongMovies.map( function(item) {
+   fetch('https://www.omdbapi.com/?i='+ item  + '&apikey=cc1c0d5d')
+     .then(res => res.json())
+      .then(data => {
+    document.getElementById('allMovies').innerHTML +=  `
+            <div class="col s12 m4">
+                 <div class="card large">
+                     <div class="card-image waves-effect waves-block waves-light">
+                         <img class="activator" src="${data.Poster}">
+                     </div>
+                     <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4"><i class="material-icons right">more_vert</i></span>
+                          <h6>${data.Title}</h6>
+                     </div>
+                 <div class="card-reveal">
+                   <span class="card-title grey-text text-darken-4">${data.Title}<i class="material-icons right">close</i></span>
+                   <p>Country : ${data.Country}</p>
+                   <p>Year : ${data.Year}  </p>
+                   <p>Director : ${data.Director}</p>
+                   <p>${data.Plot}</p>
+                   <p>IMDB : ${data.imdbRating}</p>
+                   <i class="material-icons">sentiment_very_dissatisfied</i>
+                   <i class="material-icons">tag_faces</i>
+                   <i class="material-icons">favorite_border</i>
+                   <i class="material-icons">fitness_center</i>
+                   </div> 
+             </div>
+        </div> 
+        
+               
+               
+               
+               `
+        
+      })
+      
+   })
+   }
+   
