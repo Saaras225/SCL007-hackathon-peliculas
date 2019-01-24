@@ -24,3 +24,18 @@ ul li {
     margin-right: 0px!important;
  text-transform: none;
 }
+
+.row-padding{
+    padding: 30px;
+
+
+}
+
+.card.large .card-image {
+    max-height: 80%!important;
+}
+#aallMovies{
+    display: flex;
+    height: 500px;
+    overflow-y: scroll;
+}
