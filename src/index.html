@@ -10,70 +10,87 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="style.css">
-    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    
+ <link rel="shortcut icon" href="" type="image/x-icon">
+
+
 
   </head>
 
   <body>
-  <!-- Logo y menu -->        
- <header class="purple lighten-2" role="navigation"> 
-     
-      <nav>
-        <div class="nav-wrapper container">
-          <a href="#" class="brand-logo">FemeFlix</a>
-          <ul id="nav-mobile" class="right hide-on-med-and-down">
-            
-                <li><a data-target="modal1" class="modal-trigger" href="#modal1">Quienes Somos</a></li>
+   <!-- Logo y menu -->
+ <header class="purple darken-4" role="navigation">
 
-          </ul>
+    <nav>
+      <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">App Movie</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="">Quiénes Somos</a></li>
+         <li><a href="">Conóceme</a></li>
+
+        </ul>
+      </div>
+    </nav>
+
+ </header>
+<!-- Fin Logo y menu -->
+
+      <div class="row no-padding background-index no-margin">
+          <div class="container">
+              <br><br> <br><br><br><br>
+              <h1 class="header center White-text">Frase Motivadora</h1>
+              <div class="row center">
+                <h5 class="header col s12 light">App Movie te invita a que puedas contribuir a la creación de poder para mujeres a través del cine sólo con tu clasificación.</h5>
+              </div>
+              <div class="row center">
+                <a href="#allMoviesection" id="download-button" class="btn-large waves-effect waves-light purple darken-4">Comenzar</a>
+              </div>
+              <br><br>
+        
+            </div>
         </div>
-      </nav>
-    
-   </header>
-<!-- Fin Logo y menu -->   
+  <!-- Logo y menu -->        
+
 
 
 
  <!-- Aqui busca por Filtros y muestra todas las peliculas -->       
-<section class="section no-pad-bot" id="index-banner">
-       <!-- <div class="container"> -->
-        <br><br>
-       
+<section id="allMoviesection">
       
-       
-                    <div class="row row-padding">
+     
+                <!-- Movie filter for type section -->
+                <div class="purple lighten-2" role="navigation"> 
+                    <nav>
+                        <div class="nav-wrapper container">
+                         <ul >
+                           <li><a class=" waves-effect waves-light " id="all"></a></li>
+                            <li><a class=" waves-effect waves-light " id="all">Todas Mujeres</a></li>
+                           <li><a class=" waves-effect waves-light " id="strong">Derechos Humanos</a></li>
+                           <li><a class=" waves-effect waves-light " id="cry" >Mujeres Lideres</a></li>
+                            <li><a class=" waves-effect waves-light" id="smile">Superacion</a></li>
+                           <li><a class=" waves-effect waves-light " id ="liberation">Empoderamiento</a></li>
+                          <li><a class=" waves-effect waves-light " id="achieve">Liberacion</a></li>
+                      </ul>  
+                     </div>    
+            </nav> 
+                   
+                  
+          </div>
 
-                      <!-- Aside buscador ordenar y tipos -->
-
-                        <aside class="col s3">
-                          <h5 >Peliculas</h5>
-                    
-
-                          <!-- Movie filter for type section -->
-                         <div class="filterMovie">
-                         <ul>
-                           <li><a class="purple lighten-2 waves-effect waves-light btn-small" id="strong">Empoderamiento</a></li>
-                           <li><a class="purple lighten-2 waves-effect waves-light btn-small" id="cry" >Tristeza</a></li>
-                            <li><a class="purple lighten-2 waves-effect waves-light btn-small">?</a></li>
-                           <li><a class="purple lighten-2 waves-effect waves-light btn-small">Volcán de emociones</a></li>
-                          <li><a class="purple lighten-2 waves-effect waves-light btn-small">Superación personal</a></li>
-                      </ul>       
-                      </div>
-                          
-                        </aside>
-
+              
+<div class="row row-padding">
+                 
                         <!-- Mostrar MOVIE filter for type section -->
 
-                    <div class="col s9">
-                   <div class="showFilterMovies" id="allMovies"> </div>
-                     </div>
+        <div class="col s12">
+             <div class="showFilterMovies" id="allMovies">  </div>
 
-                 </div>
-            </div>
+           </div>
+               
+       </div>
+</div>
           <!-- </div> -->
 
  </section>
@@ -99,7 +116,7 @@
 <!-- Footer -->
 
 
-    <footer class="page-footer purple lighten-2">
+    <footer class="page-footer purple darken-4">
       
           <div class="container row-padding">
           © 2019 Laboratoria
@@ -113,6 +130,9 @@
 
 
 <!-- Compiled and minified JavaScript -->
+
+
+
 <script>
   
 
@@ -120,11 +140,10 @@
     $('.modal').modal();
   });
           
-
+ 
 </script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <script src="main.js"></script>
-    <script src="movie.js"></script>
+<script src="main.js"></script>
+<script src="movie.js"></script>
 
 
     </body>

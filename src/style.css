@@ -6,8 +6,19 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.background-index{
+    background: url(img/banner.jpg) center / cover white;
+  
+    height: 100vh;
+    
+}
 .margin-button{
     margin-bottom: 10px;
+}
+
+
+.no-margin{
+    margin-bottom: 0px !important;
 }
 
 .filterMovie{
