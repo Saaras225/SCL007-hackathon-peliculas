@@ -6,12 +6,23 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+.background-index{
+    background: url(img/banner.jpg) center / cover white;
+
+    height: 100vh;
+
+}
 .margin-button{
     margin-bottom: 10px;
 }
 
+
+.no-margin{
+    margin-bottom: 0px !important;
+}
+
 .filterMovie{
-    margin-top: 10px;
+    margin-top: 60px;
 }
 
 ul li {
@@ -26,7 +37,7 @@ ul li {
 }
 
 .row-padding{
-    padding: 30px;
+    padding: 50px;
 
 
 }
@@ -34,8 +45,19 @@ ul li {
 .card.large .card-image {
     max-height: 80%!important;
 }
-#aallMovies{
-    display: flex;
+.showFilterMovies{
+
     height: 500px;
     overflow-y: scroll;
+}
+
+nav {
+    background: none;
+}
+.btn-filter li{
+    display: inline;
+}
+
+#icon {
+  margin-left: 10px;
 }
