@@ -61,3 +61,8 @@ nav {
 #icon {
   margin-left: 10px;
 }
+
+#phrase {
+  font: Bookman L, serif;
+  font-size: 70px;
+}
