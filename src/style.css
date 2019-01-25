@@ -1,17 +1,11 @@
-@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
 
-
-
-body {
-    font-family: 'Lato', sans-serif;
-}
 
 .background-index{
     background: url(img/banner.jpg) center / cover white;
-
-    height: 100vh;
-
+  height: 100vh;
+  
 }
+
 .margin-button{
     margin-bottom: 10px;
 }
@@ -39,6 +33,11 @@ ul li {
 .row-padding{
     padding: 50px;
 
+}
+.margen{
+    margin-top: 50px;
+
+
 
 }
 
@@ -56,6 +55,7 @@ nav {
 }
 .btn-filter li{
     display: inline;
+
 }
 
 #icon {
@@ -66,3 +66,6 @@ nav {
   font: Bookman L, serif;
   font-size: 70px;
 }
+
+}
+
